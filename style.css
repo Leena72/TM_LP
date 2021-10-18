@@ -1,0 +1,701 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.line-divide {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+
+.main-heading {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-family: "Oswald", sans-serif;
+  line-height: normal;
+}
+
+.main-para {
+  margin: 3em 0;
+}
+.main-para p {
+  font-size: 1.25em;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: normal;
+  word-spacing: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 28px;
+  width: 80%;
+  margin: auto;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.btn-container a {
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+  letter-spacing: 2px;
+  display: inline-block;
+  position: relative;
+  transition: all 0.35s;
+  font-weight: bold;
+}
+.btn-container a span {
+  position: relative;
+  z-index: 2;
+}
+ .btn-container a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(270deg, #ff7533 0%, #e72e25 43%, #e72924 73%, #e62222 100%);
+  transition: all 0.35s;
+}
+.btn-container a:hover {
+  color: #fff;
+  border-color: #ef6f35;
+}
+ .btn-container a:hover:after {
+  width: 100%;
+}
+
+.heading-line {
+  position: relative;
+  margin-bottom: 5em;
+}
+
+.rise-section-para{
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: normal;
+  word-spacing: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 22px;
+}
+
+.rise-section-heading{
+  font-size: 1.75em;
+  font-weight: bold;
+  letter-spacing: normal;
+  word-spacing: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+
+/* banner section */
+
+.banner {
+  background-image: url("https://f.hubspotusercontent10.net/hubfs/481864/TM-landingPage/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3em 2em;
+  position: relative;
+  height: 100vh;
+}
+.banner .logo-container .logo {
+  width: 14em;
+}
+.banner .logo-container .logo img {
+  width: 100%;
+}
+.banner .banner-heading {
+  padding-top: 1.3em;
+}
+.banner .banner-heading h1 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  font-family: "Oswald", sans-serif;
+  line-height: 55px;
+  text-transform: uppercase;
+}
+.banner .sh-block {
+  width: 50%;
+  margin: 1em auto;
+}
+.banner .sh-block .block-img {
+  background-image: url("https://f.hubspotusercontent10.net/hubfs/481864/TM-landingPage/sh-block.png");
+  background-attachment: initial;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #03122f; 
+  background-position: top;
+  height: 74px;
+}
+.banner .sh-block .block-img p {
+  margin: 0;
+  padding-top: 0.5em;
+  font-size: 1.75em;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: normal;
+}
+
+/* unlock section */
+
+.unlock {
+  background-image: url("https://f.hubspotusercontent10.net/hubfs/481864/TM-landingPage/mid.png");
+  background-attachment: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3em 2em;
+  position: relative;
+}
+
+.unlock .heading-line .curve-line {
+  position: absolute;
+  top: 2em;
+  width: 78%;
+  left: -2em;
+  right: 0;
+}
+
+.unlock .heading-line .single-line {
+  display: none;
+}
+
+
+/* rise section */
+
+.rise {
+  padding: 3em 2em;
+  position: relative;
+  background-color: #020f28;
+}
+
+.rise .heading-line .curve-line {
+  position: absolute;
+  top: 1.5em;
+  width: 86%;
+  left: -2em;
+  right: 0;
+}
+
+.rise .heading-line .single-line {
+  display: none;
+}
+
+.rise .rise-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+.rise .rise-cards .r-card {
+  margin: 1em 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 243px;
+  padding: 4.5em 2.3em 2.4em;
+  height: 23em;
+}
+.rise .rise-cards .r-card p {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: normal;
+  word-spacing: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 22px;
+}
+.rise .rise-cards .r-card h3 {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: normal;
+  font-family: "Oswald", sans-serif;
+  line-height: normal;
+  height: 5.5em;
+  margin-top: 0.3em;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+}
+.rise .rise-cards .c1 {
+  background-image: url("https://f.hubspotusercontent10.net/hubfs/481864/TM-landingPage/c21.png");
+}
+.rise .rise-cards .c2 {
+  background-image: url("https://f.hubspotusercontent10.net/hubfs/481864/TM-landingPage/c22.png");
+}
+.rise .rise-cards .c3 {
+  background-image: url("https://f.hubspotusercontent10.net/hubfs/481864/TM-landingPage/c23.png");
+}
+
+.rise-include {
+  padding: 3em 2em;
+  position: relative;
+  background-color: #020f28;
+}
+
+.rise-include .heading-line .curve-line {
+  position: absolute;
+  top: 2em;
+  width: 86%;
+  left: unset;
+  right: -2em;
+}
+.rise-include .heading-line .single-line {
+  display: none;
+}
+.rise-include .left {
+  margin: 0 0 2em 4em;
+}
+
+.rise-include .right .ri-right-detail {
+  text-align: right;
+}
+.rise-include .rise-inc-card, .rise-include .rise-right-card {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin-bottom: 3em;
+}
+.rise-include .rise-inc-card .rise-inc-detail, .rise-include .rise-right-card .rise-inc-detail {
+  width: 40%;
+}
+.rise-include .rise-inc-card .rise-inc-detail .sec-img , .rise-include .rise-right-card .rise-inc-detail .sec-img  {
+  position: relative;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rise-include .rise-inc-card .rise-inc-detail .sec-img .sec-left-img {
+  width: 100%;
+  left: -6em;
+  position: absolute;
+}
+.rise-include .rise-right-card .rise-inc-detail .sec-img .sec-right-img {
+  width: 100%;
+  right: -7.5em;
+  position: absolute;
+}
+
+.rise-include .right{margin: 0 0 3em 6em;}
+
+.rise-inc-card .rise-inc-detail .rise-section-heading,.rise-inc-card .rise-inc-detail .rise-section-para{text-align: left;}
+.rise-right-card .rise-inc-detail .rise-section-heading, .rise-right-card .rise-inc-detail .rise-section-para{text-align: right;}
+
+.rise-include .rise-inc-card .rise-inc-img , .rise-include .rise-right-card .rise-inc-img {
+  width: 40%;
+}
+.rise-include .rise-inc-card .rise-inc-img img , .rise-include .rise-right-card .rise-inc-img img {
+  width: 100%;
+}
+
+/* innovation section */
+
+.innovation {
+  background-image: url("https://f.hubspotusercontent10.net/hubfs/481864/TM-landingPage/mid.png");
+  background-attachment: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3em 2em;
+  position: relative;
+}
+
+.innovation .heading-line .curve-line {
+  position: absolute;
+  top: 1.5em;
+  width: 95%;
+  left: -2em;
+  right: 0;
+}
+
+.innovation .heading-line .single-line {
+  display: none;
+}
+
+.innovation .innovation-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.innovation .innovation-cards .in-card {
+  text-align: center;
+  position: relative;
+  border: 1px solid #fff;
+  width: 250px;
+  padding: 2em;
+  border-radius: 10px;
+  margin: 2em 0;
+}
+.innovation .innovation-cards .in-card .in-card-img {
+  position: relative;
+}
+.innovation .innovation-cards .in-card .in-card-img img {
+  position: absolute;
+  width: 4em;
+  top: -4em;
+  left: 4em;
+}
+.innovation .innovation-cards .in-card .in-card-detail p {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: normal;
+  word-spacing: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 22px;
+  margin: 0.5em 0 0;
+}
+
+/* hardle section */
+
+.hardle {
+  padding: 3em 2em;
+  position: relative;
+  background-color: #020f28;
+}
+
+.hardle .heading-line .curve-line {
+  position: absolute;
+  top: 2em;
+  width: 78%;
+  left: unset;
+  right: -2em;
+}
+
+.hardle .hardle-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+.hardle .heading-line .single-line {
+  display: none;
+}
+.hardle .hardle-cards .h-card {
+  width: 180px;
+  margin: 1em 0;
+}
+.hardle .hardle-cards .h-card .h-card-img {
+  width: 100%;
+}
+.hardle .hardle-cards .h-card .h-card-img img {
+  width: 100%;
+}
+.hardle .hardle-cards .h-card .h-card-detail {
+  background-color: #e31837;
+  margin-top: 0.2em;
+}
+.hardle .hardle-cards .h-card .h-card-detail h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: normal;
+  font-family: "Oswald", sans-serif;
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 1em 0.5em;
+  height: 112px;
+}
+.hardle .hardle-cards .h-card .h-card-detail hr {
+  width: 85%;
+  margin: auto;
+}
+.hardle .hardle-cards .h-card .h-card-detail p {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: normal;
+  word-spacing: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 22px;
+  margin: 0.3em 0 0;
+  padding: 1em 0.5em;
+  height: 180px;
+}
+
+/* featured section */
+
+.featured {
+  background-image: url("https://f.hubspotusercontent10.net/hubfs/481864/featured-ban.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #1a2740;
+  padding: 3em 2em;
+  position: relative;
+}
+
+.featured .heading-line .curve-line {
+  position: absolute;
+  top: 2em;
+  width: 80%;
+  left: -2em;
+  right: 0;
+}
+
+.featured .featured-card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+.featured .heading-line .single-line {
+  display: none;
+}
+.featured .featured-card .f-card {
+  margin: 1em 0;
+}
+.featured .featured-card .f-card h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: normal;
+  word-spacing: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.featured .featured-card .f-card .f-card-detail {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 270px;
+  padding: 5em 2.3em 2.3em;
+  margin: 2em 0;
+}
+.featured .featured-card .f-card .f-card-detail p {
+  font-size: 0.9em;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: normal;
+  word-spacing: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 20px;
+}
+.featured .featured-card .c1 {
+  background-image: url("https://f.hubspotusercontent10.net/hubfs/481864/TM-landingPage/g6.png");
+}
+.featured .featured-card .c2 {
+  background-image: url("https://f.hubspotusercontent10.net/hubfs/481864/TM-landingPage/g7.png");
+}
+.featured .featured-card .c3 {
+  background-image: url("https://f.hubspotusercontent10.net/hubfs/481864/TM-landingPage/g8.png");
+}
+
+.featured .featured-card .f-card .f-card-detail .btn-container{    margin-top: 0.5em;}
+.featured .featured-card .f-card .f-card-detail .btn-container a{    font-size: 0.8em;
+  padding: 0.5em 1em;}
+
+/* footer section */
+
+.footer {
+  background-image: linear-gradient(#e31837, #980821);
+  padding: 3em 2em;
+  position: relative;
+}
+.footer .footer-para {
+  text-align: center;
+}
+.footer .footer-para p {
+  font-size: 1.25em;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: normal;
+  word-spacing: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 26px;
+  margin: 0;
+}
+.footer .btn-container {margin: 2em 0;}
+.footer .btn-container a{
+  font-size: 2em;
+    padding: 0.5em 2.5em;
+}
+
+.footer .social-link {
+  text-align: center;
+}
+.footer .social-link a img {
+  width: 2.5em;
+}
+
+@media screen and (max-width: 360px){
+  .banner .banner-heading{padding-top: 4em;}
+  .banner .banner-heading h1{font-size: 1.5em; line-height: 35px;}
+  .banner .sh-block{ width: 100%;}
+  .banner .sh-block .block-img{background: none; border: 1px solid #fff;padding: 0.5em;}
+  .banner .sh-block .block-img p{font-size: 1em;line-height: 22px;  background: #e31837;}
+  
+}
+@media (min-width: 361px) and (max-width:380px){
+  .banner .sh-block .block-img p{font-size: .75em;line-height: 22px;}
+}
+@media (min-width: 381px) and (max-width:480px){
+  .banner .sh-block .block-img p{font-size: .8em;line-height: 22px;padding-top: .7em;}
+}
+@media screen and (max-width: 480px){
+  .banner .logo-container .logo{width: 10em;}
+  .banner .banner-heading{padding-top: 4em;}
+  .banner .banner-heading h1{font-size: 1.5em; line-height: 35px;}
+  .banner .sh-block{ width: 100%;}
+
+  .main-heading {font-size: 1.8em; letter-spacing: 1px; word-spacing: 2px;}
+  .main-para p {font-size: 1em;line-height: 22px;width: 100%;}
+
+  .rise .rise-cards{width: 100%;}
+
+  .footer .footer-para p {font-size: 1em;}
+  .footer .footer-para p br{display: none;}
+  .footer .social-link a img {width: 2em;}
+  .footer .btn-container a{ font-size: 1.2em; padding: 0.5em 2em;}
+
+}
+
+  @media (min-width:481px)and (max-width: 767px){
+    .banner .logo-container .logo{width: 11em;}
+    .banner .banner-heading{padding-top: 6em;}
+    .banner .sh-block .block-img p{font-size: 1em;line-height: 22px;padding-top: .8em;}
+    .banner .sh-block{ width: 90%; }
+    
+  }
+  @media (min-width:481px)and (max-width: 600px){
+  .banner .banner-heading h1{font-size: 2em; line-height: 40px;}
+
+  .main-heading {font-size: 2em; letter-spacing: 1px; word-spacing: 2px;}
+  .main-para p {font-size: 1em;line-height: 22px;}
+  }
+  @media (min-width:601px)and (max-width: 740px){
+    .banner .banner-heading h1{font-size: 2em; line-height: 40px;}
+    .banner .sh-block .block-img p{font-size: 1em;line-height: 22px;}
+    .banner .sh-block{ width: 80%; }
+
+    .main-heading {font-size: 2em; letter-spacing: 1px; word-spacing: 2px;}
+    .main-para p {font-size: 1.2em;line-height: 22px;}
+  }
+  @media (min-width:741px)and (max-width: 767px){
+    .banner .banner-heading h1{font-size: 2.2em; line-height: 40px;}
+    .banner .sh-block .block-img p{font-size: 1.3em;line-height: 22px;}
+    .banner .sh-block{ width: 80%; }
+
+    .main-heading {font-size: 2.2em; letter-spacing: 1px; word-spacing: 2px;}
+    .main-para p {font-size: 1.2em;line-height: 22px;}
+
+  }
+  @media screen and (max-width: 767px){
+    .featured .heading-line .curve-line, .hardle .heading-line .curve-line,.innovation .heading-line .curve-line, .rise .heading-line .curve-line, .unlock .heading-line .curve-line,.rise-include .heading-line .curve-line{display: none;}
+    .featured .heading-line .single-line,.innovation .heading-line .single-line, .unlock .heading-line .single-line{ display: block;bottom: -2em;width: 100%;position: absolute;left:-2em;}
+   
+    .hardle .heading-line .single-line, .rise .heading-line .single-line,.rise-include .heading-line .single-line {display: block;bottom: -2em;width: 100%;position: absolute;right:-2em;}
+   
+    .rise-include .rise-inc-card {flex-direction: column;  width: 100%;}
+    .rise-include .left{margin: 0 0 3em 0;}
+    .rise-include .rise-inc-card .rise-inc-detail,.rise-include .rise-inc-card .rise-inc-img , .rise-include .rise-right-card .rise-inc-img, .rise-include .rise-right-card .rise-inc-detail{width: 100%;}
+    .rise-include .rise-inc-card .rise-inc-detail h3,.rise-include .rise-right-card .rise-inc-detail h3{text-align: center; font-size: 1.5em;};
+    .rise-include .rise-inc-card .rise-inc-detail p,.rise-include .rise-right-card .rise-inc-detail p{text-align: center;margin-bottom: 1em;}
+    .rise-include .rise-right-card{width: 100%; flex-direction: column-reverse; text-align: center;}
+    .rise-include .rise-right-card .rise-inc-detail .sec-img .sec-right-img {right: -2em;}
+    .rise-include .rise-inc-card .rise-inc-detail p,.rise-include .rise-right-card .rise-inc-detail p{text-align: center;margin-bottom: 1em;}
+    .rise-include .right{margin: 0 0 3em 0;}
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .banner .logo-container .logo{width: 12em;}
+    .banner .banner-heading{padding-top: 10em;}
+    .banner .banner-heading h1{font-size: 3em; line-height: 60px;}
+    .banner .sh-block{ width: 100%;}
+    .banner .sh-block .block-img p{font-size: 1.8em;line-height: 32px;}
+
+    .main-heading {font-size: 2.8em; letter-spacing: 2px; word-spacing: 3px;}
+    .main-para p {font-size: 1.2em;line-height: 25px;}
+    
+    .rise .rise-cards{width: 100%;}
+    .rise .rise-cards .c1,.rise .rise-cards .c2,.rise .rise-cards .c3{width: 200px;padding: 3.5em 1.5em 2em 2em;height: 19.5em;}
+    .rise .rise-cards .r-card p {font-size: 0.9em}
+    .rise .rise-cards .r-card h3{height: 5em; font-size: 0.9em;}
+    .rise-include .rise-inc-card .rise-inc-detail .sec-img,.rise-include .rise-right-card .rise-inc-detail .sec-img {height: 0;}
+    .rise-include .rise-inc-card .rise-inc-detail h3, .rise-include .rise-right-card .rise-inc-detail h3 {font-size: 1.2em; line-height: 22px;  margin-bottom: 0.5em;}
+    .rise-include .rise-inc-card .rise-inc-img, .rise-include .rise-right-card .rise-inc-img  {width: 50%;}
+    .rise-include .rise-inc-card .rise-inc-detail p,.rise-include .rise-right-card .rise-inc-detail p{font-size: .8em;line-height: 20px; margin-top: 0.5em;}
+    .rise-include .rise-right-card .rise-inc-detail .sec-img .sec-right-img {right: -3.5em;}
+    .rise-include .left { margin: 0 0 2em 2em;}
+    .rise-include .right { margin: 0 0 2em 5em;}
+    
+    .hardle .hardle-cards {width: 100%;} 
+    .hardle .hardle-cards .h-card {width:120px;}
+    .hardle .hardle-cards .h-card .h-card-detail h3{font-size: 0.9em;}
+    .hardle .hardle-cards .h-card .h-card-detail p{font-size: 0.9em;}
+    .hardle .heading-line .single-line, .rise .heading-line .single-line,.rise-include .heading-line .single-line{display: block;bottom: -2em;width: 100%;position: absolute;right:-2em;}
+    
+    .featured .featured-card{width: 100%;}
+    .featured .featured-card .f-card .f-card-detail{width: 230px;padding: 5em 2em 3.3em 2em;}
+    .featured .heading-line .curve-line, .hardle .heading-line .curve-line,.innovation .heading-line .curve-line, .rise .heading-line .curve-line, .unlock .heading-line .curve-line ,.rise-include .heading-line .curve-line {display: none;}
+    .featured .heading-line .single-line,.innovation .heading-line .single-line, .unlock .heading-line .single-line{ display: block;bottom: -2em;width: 100%;position: absolute;left:-2em;}
+    
+    
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .banner .logo-container .logo{width: 12em;}
+    .banner .banner-heading{padding-top: 6em;}
+    .banner .banner-heading h1{font-size: 3em; line-height: 60px;}
+    .banner .sh-block{ width: 100%;}
+    .banner .sh-block .block-img p{font-size: 1.8em;line-height: 32px;}
+
+    .main-heading {font-size: 2.5em; letter-spacing: 2px; word-spacing: 3px;}
+    .main-para p {font-size: 1.2em;line-height: 25px;}
+    
+    .rise .rise-cards{width: 100%;}
+    .rise .heading-line .curve-line {width: 88%;}
+    .rise-include .rise-inc-card .rise-inc-detail .sec-img,.rise-include .rise-right-card .rise-inc-detail .sec-img{height: 0;}
+    .rise-include .rise-right-card .rise-inc-detail .sec-img .sec-right-img {right: -4.5em;}
+    .rise-include .heading-line .curve-line{width: 89%;}
+    .rise-include .rise-right-card .rise-inc-detail h3{text-align: right;}
+    .rise-include .rise-inc-card .rise-inc-detail h3{text-align: left;}
+    .rise-include .rise-inc-card .rise-inc-detail h3, .rise-include .rise-right-card .rise-inc-detail h3{font-size: 1.3em; line-height: 25px;  margin-bottom: 0.5em;}
+    .rise-include .rise-inc-card .rise-inc-detail p, .rise-include .rise-right-card .rise-inc-detail p{font-size: .8em;line-height: 20px; margin-top: 1em;}
+    .rise-include .right{margin: 0 0 3em 6em;}
+    
+    .innovation .innovation-cards .in-card{width: 220px;}
+    .innovation .innovation-cards .in-card .in-card-img img {left: 3em;}
+    .innovation .heading-line .curve-line{width: 100%;}
+
+    .hardle .hardle-cards {width: 100%;} 
+    .hardle .hardle-cards .h-card {width:160px;}
+    .hardle .hardle-cards .h-card .h-card-detail h3{font-size: 1em;}
+    .hardle .hardle-cards .h-card .h-card-detail p{font-size: 1em; height: 190px;}
+    .hardle .heading-line .curve-line{width: 82%;}
+    
+    .featured .heading-line .curve-line {width: 84%;}
+
+    .unlock .heading-line .curve-line{width: 82%;}
+    }
